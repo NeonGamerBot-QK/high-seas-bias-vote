@@ -1,0 +1,27 @@
+{
+    "name": "High Seas: User based voting",
+    "description": "Adds a highlight to the user who you have selected to have a bias towards",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.highseas.hackclub.com/wonderdome"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "custom.css"
+            ]
+        },
+        {
+            "matches": [
+                "*://*.highseas.hackclub.com/shipyard"
+            ],
+            "js": [
+                "config.js"
+            ]
+        }
+    ]
+}
