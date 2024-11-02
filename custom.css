@@ -1,24 +1,20 @@
 .bias-select-me {
-    color: red !important;
-    border: 10px solid red !important;
+  color: red !important;
+  border: 10px solid red !important;
 }
 
 .bias-select-me #vote-button {
-    /* color: red !important; */
-    background-color: red !important;
-    /* animation: pulse 1s cubic-bezier(0, 0, 0.2, 1) infinite; */
-    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    /* border: 10px solid red !important; */
+  background-color: red !important;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
 
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: .5;
-    }
+  50% {
+    opacity: 0.5;
+  }
 }
