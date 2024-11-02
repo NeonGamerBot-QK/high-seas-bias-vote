@@ -1,4 +1,4 @@
-const biasedGitUsers = localStorage.getItem('biasedGitUsers');
+const biasedGitUsers = localStorage.getItem('biasedGitUsers') || "[]";
 const users = JSON.parse(biasedGitUsers);
 setInterval(() => {
     if (document.querySelectorAll("#repository-link").length !== 2) return;
