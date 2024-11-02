@@ -1,20 +1,13 @@
 {
-    "name": "High Seas: User based voting",
-    "description": "Adds a highlight to the user who you have selected to have a bias towards",
-    "version": "1.0",
-    "manifest_version": 3,
-    "content_scripts": [
-        {
-            "matches": [
-                "*://*.highseas.hackclub.com/*"
-            ],
-            "js": [
-                "content.js",
-                "config.js"
-            ],
-            "css": [
-                "custom.css"
-            ]
-        }
-    ]
+  "name": "High Seas: User based voting",
+  "description": "Adds a highlight to the user who you have selected to have a bias towards",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://*.highseas.hackclub.com/*"],
+      "js": ["content.js", "config.js"],
+      "css": ["custom.css"]
+    }
+  ]
 }
