@@ -125,7 +125,7 @@ function startup() {
   shipyardContent.setAttribute("role", "tabpanel");
   shipyardContent.setAttribute(
     "aria-labelledby",
-    "radix-:ro:-trigger-shipyard"
+    "radix-:ro:-trigger-shipyard",
   );
   shipyardContent.id = "radix-:ro:-content-shipyard--bias";
   shipyardContent.setAttribute("tabindex", "0");
@@ -196,18 +196,18 @@ function startup() {
   div.appendChild(shipyardContent);
   if (
     document.getElementsByClassName(
-      "rounded-lg bg-card text-card-foreground shadow-sm bg-blend-color-burn w-full max-w-4xl flex flex-col mx-auto mt-20 overflow-x-hidden mb-14"
+      "rounded-lg bg-card text-card-foreground shadow-sm bg-blend-color-burn w-full max-w-4xl flex flex-col mx-auto mt-20 overflow-x-hidden mb-14",
     ).length > 0
   ) {
     document
       .getElementsByClassName(
-        "rounded-lg bg-card text-card-foreground shadow-sm bg-blend-color-burn w-full max-w-4xl flex flex-col mx-auto mt-20 overflow-x-hidden mb-14"
+        "rounded-lg bg-card text-card-foreground shadow-sm bg-blend-color-burn w-full max-w-4xl flex flex-col mx-auto mt-20 overflow-x-hidden mb-14",
       )[0]
       .parentElement.insertBefore(
         div,
         document.getElementsByClassName(
-          "rounded-lg bg-card text-card-foreground shadow-sm bg-blend-color-burn w-full max-w-4xl flex flex-col mx-auto mt-20 overflow-x-hidden mb-14"
-        )[0]
+          "rounded-lg bg-card text-card-foreground shadow-sm bg-blend-color-burn w-full max-w-4xl flex flex-col mx-auto mt-20 overflow-x-hidden mb-14",
+        )[0],
       );
   } else {
     document.body.appendChild(div);
