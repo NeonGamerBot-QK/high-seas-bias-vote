@@ -5,13 +5,13 @@ setInterval(() => {
   const urls = Array.from(document.querySelectorAll("#repository-link")).filter(
     (e) =>
       !e.parentElement.parentElement.parentElement.classList.contains(
-        "bias-select-me"
-      )
+        "bias-select-me",
+      ),
   );
   for (const url of urls) {
     if (users.some((u) => url.href.includes(u))) {
       url.parentElement.parentElement.parentElement.classList.add(
-        "bias-select-me"
+        "bias-select-me",
       );
     }
   }
